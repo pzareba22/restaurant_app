@@ -1,0 +1,60 @@
+.dishHolder
+    text-align: center
+    display: flex
+    justify-content: center
+    // justify-content: right
+    align-items: center
+    max-width: 55vw
+    gap: 2em
+    margin: 2em
+    padding: 2em 1em
+    // border: solid black 1px
+    border-radius: 8px
+    background-color: #fff
+    position: relative
+
+    a
+        color: inherit
+        text-decoration: none
+
+    .infoWrapper
+        width: 35%
+
+        .orange
+            color: darkorange
+
+    .imgWrapper
+        overflow: hidden
+        width: 20vw
+        height: 20vh
+        cursor: pointer
+
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+    .buttonsWrapper
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        gap: 1em
+
+        button
+            width: 2em
+            height: 2em
+
+    &.max #price
+        color: red
+        // border: solid red 1px
+
+    &.min #price
+        color: green
+        // border: solid green 1px
+
+    &.left
+        left: -10%
+
+    &.right
+        left: 10%

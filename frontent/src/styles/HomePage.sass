@@ -1,0 +1,66 @@
+.homePage
+    font-family: sans-serif
+    font-size: xx-large
+    padding: 0
+
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+
+    background-image: url("/constants/images/table.jpeg")
+    background-size: cover
+    padding-top: 5%
+
+    color: #fff
+
+    h2
+        margin: 0
+
+    .mainLogo
+        background-image: url("/constants/images/restaurant.jpg")
+        background-repeat: no-repeat
+        width: 100vw
+        height: 100vh
+
+    .details
+        position: relative
+        left: 20%
+
+        display: flex
+        flex-direction: column
+        text-align: center
+        // background-color: #fff
+        // border: 2px solid #7c7c7c
+        // border-radius: 15px
+        padding: 0 2em
+        justify-content: center
+        align-items: center
+        width: 50%
+        margin: 2em auto
+        gap: 1em
+
+        p
+            margin: 0
+
+        .map
+            margin: 1em
+            max-width: 604px
+            border: 2px solid black
+            border-radius: 10px
+            .mapouter
+                position: relative
+                text-align: right
+                height: 500px
+                width: 600px
+            .gmap_canvas
+                overflow: hidden
+                background: none !important
+                height: 500px
+                width: 600px
+                // display: flex
+                // justify-content: center
+                // align-items: center
+            #gmap_canvas
+                border-radius: 10px
